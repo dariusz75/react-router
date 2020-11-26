@@ -29,10 +29,14 @@ a {
 }
 
 a:hover {
-  color: yellow;
+  color: red;
 }
 
 section {
   padding: 30px 0 0 0;
   text-align: center;
+}
+
+.active {
+  border-bottom: 4px solid red;
 }
