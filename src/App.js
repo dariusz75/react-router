@@ -1,6 +1,11 @@
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  NavLink,
+} from "react-router-dom";
 import "./App.css";
-import { Home, News, Contact } from "./components";
+import { Home, News, Contact, ErrorPage } from "./components";
 
 function App() {
   return (
@@ -24,9 +29,12 @@ function App() {
           </nav>
         </header>
         <section>
-          <Route path="/" exact component={Home} />
-          <Route path="/news/" component={News} />
-          <Route path="/contact/" component={Contact} />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/news/" component={News} />
+            <Route path="/contact/" component={Contact} />
+            <Route component={ErrorPage} />
+          </Switch>
         </section>
       </div>
     </Router>
