@@ -6,7 +6,7 @@ import { Home, News, Contact, ErrorPage } from "./components";
 function App() {
   return (
     <Router>
-      <div className="app">
+      <div className="app container">
         <header>{<Header />}</header>
         <main>
           <aside>

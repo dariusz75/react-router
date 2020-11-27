@@ -21,6 +21,11 @@ aside {
   min-width: 240px;
 }
 
+section {
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+
 section.page {
   flex-grow: 1;
 }
@@ -31,40 +36,4 @@ footer {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-}
-
-nav {
-  background-color: #000;
-}
-
-ul {
-  display: flex;
-  list-style-type: none;
-}
-
-li {
-  flex-grow: 1;
-}
-
-a {
-  display: block;
-  padding: 15px 25px;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-bottom: 4px solid #000;
-}
-
-a:hover {
-  color: red;
-}
-
-section {
-  padding: 30px 0 0 0;
-  text-align: center;
-}
-
-.active {
-  border-bottom: 4px solid red;
 }

@@ -1,0 +1,31 @@
+nav.main-nav {
+  background-color: #000;
+}
+
+nav.main-nav ul {
+  list-style-type: none;
+}
+
+nav.main-nav ul li {
+  flex-grow: 1;
+}
+
+nav.main-nav ul li a {
+  display: block;
+  padding: 15px 25px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 4px solid #000;
+  transition: 0.3s;
+}
+
+nav.main-nav ul li a:hover {
+  color: red;
+}
+
+nav.main-nav ul li a.active {
+  border-bottom: 4px solid red;
+  color: #fff;
+}
