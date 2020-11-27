@@ -7,6 +7,7 @@ const linkDetails = [
   { name: "Home", path: "/", exact: true },
   { name: "Products", path: "/products" },
   { name: "Contact", path: "/contact" },
+  { name: "Admin", path: "/admin" },
 ];
 
 function Navigation() {
