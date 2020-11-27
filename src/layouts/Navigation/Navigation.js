@@ -5,7 +5,7 @@ import "./navigation.css";
 
 const linkDetails = [
   { name: "Home", path: "/", exact: true },
-  { name: "News", path: "/news" },
+  { name: "Products", path: "/products" },
   { name: "Contact", path: "/contact" },
 ];
 
