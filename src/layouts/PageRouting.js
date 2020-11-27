@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import { Home } from "../pages";
+
 const PageRouting = () => {
-  return <div>Page Routing</div>;
+  return <Route path="/" component={Home} exact />;
 };
 
 export default PageRouting;

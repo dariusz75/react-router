@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import { Header, Navigation, Page, Footer } from "./layouts";
-import { Home, Products, Contact, Error } from "./components";
+import { Header, Navigation, PageRouting, Footer } from "./layouts";
+import { Products, Contact, Error } from "./components";
+import { Home } from "./pages";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
             <nav>{<Navigation />}</nav>
           </aside>
           <section className="page">
-            <Page />
+            <PageRouting />
           </section>
         </main>
         <footer>
