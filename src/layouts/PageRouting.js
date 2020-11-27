@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import { Home, Products, Contact, Admin, Error } from "../pages";
+import { Home, Products, Contact, Admin, Login, Error } from "../pages";
 
 const PageRouting = () => {
   return (
@@ -10,6 +10,7 @@ const PageRouting = () => {
       <Route path="/products" component={Products} />
       <Route path="/contact" component={Contact} />
       <Route path="/admin" component={Admin} />
+      <Route path="/login" component={Login} />
       <Route component={Error} />
     </Switch>
   );
