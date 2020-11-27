@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  NavLink,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { Header, Navigation, Page, Footer } from "./layouts";
 import { Home, News, Contact, ErrorPage } from "./components";
@@ -11,27 +6,12 @@ import { Home, News, Contact, ErrorPage } from "./components";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app">
         <header>{<Header />}</header>
         <main>
           <aside>
             {" "}
-            <nav>
-              {<Navigation />}
-              <ul>
-                <li>
-                  <NavLink to="/" exact>
-                    Home
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/news">News</NavLink>
-                </li>
-                <li>
-                  <NavLink to="/contact">Contact</NavLink>
-                </li>
-              </ul>
-            </nav>
+            <nav>{<Navigation />}</nav>
           </aside>
           <section className="page">
             <Page />
