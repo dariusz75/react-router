@@ -10,7 +10,7 @@ const PageRouting = () => {
       <Route path="/products" component={Products} />
       <Route path="/contact" component={Contact} />
       <Route path="/admin" component={Admin} />
-      <Route path component={Error} />
+      <Route component={Error} />
     </Switch>
   );
 };
